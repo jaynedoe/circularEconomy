@@ -1,0 +1,35 @@
+
+/* ELEMENT STYLING */
+
+h1{
+    font-size: 6rem;
+}
+
+p{
+    line-height: 1.65;
+}
+
+/* NAVBAR STYLING */
+
+.gx-navbar{
+    padding: 20px 0;
+    font-size: 1.25rem;
+}
+
+.navbar-item{
+    padding: 8%;
+}
+
+/* HERO STYLING */
+
+
+.hero-body{
+    padding: 12% 0%;
+}
+
+/* ICON STYLING */
+
+
+.fa-leaf{
+    color: rgb(37, 37, 37);
+}
