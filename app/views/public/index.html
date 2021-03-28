@@ -19,16 +19,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="/app.js" defer type="text/javascript"></script>
     
   </head>
   <body>
+
     <!-- nav bar -->
 
-    <nav class="navbar gx-navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar gx-navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="/">
                     <i class="fas fa-leaf fa-2x"></i>
                 </a>
             
@@ -39,23 +42,31 @@
                 </a>
             </div>
             
-            <div id="navbarGx" class="navbar-menu">
+            <div class="navbar-menu" id="navbarGx">
                 <div class="navbar-end">
-                  <a class="navbar-item">
-                    Features
+                  <a href="#top" class="navbar-item mr-6">
+                    Home
                   </a>
             
-                  <a class="navbar-item">
-                    How it Works
+                  <a href="#features" class="navbar-item mr-6">
+                    Features
                   </a>
 
-                  <a class="navbar-item">
+                  <!-- <a href="#testimonials" class="navbar-item mr-6">
+                    Testimonials
+                  </a> -->
+
+                  <!-- <a href="#about" class="navbar-item mr-6">
                     About
-                  </a>
+                  </a> -->
 
-                  <a class="navbar-item">
+                  <a href="#contact" class="navbar-item mr-6">
                     Contact
-                  </a>            
+                  </a>      
+                  
+                  <a href="/login" class="navbar-item">
+                    <button class="button is-dark">Login</button>
+                  </a> 
 
                 </div>
             </div>
@@ -65,11 +76,11 @@
 
 <!-- hero content -->
 
-      <div class="gx-home-hero">
+      <section id="top" class="gx-home-hero">
         <div class="container hero">
-
-                <h1 class="my-6">Good Extracts</h1>
-                <p class="is-size-4 mt-3">
+          
+                <h1 class="my-6 has-text-light">Good Extracts</h1>
+                <p class="is-size-4 mt-3 has-text-light">
                     Like a dating app for your pre-loved stuff.
                 </p>
                 <div class="buttons my-6">
@@ -80,27 +91,154 @@
                       Log in
                     </a>
                 </div>
+
         </div>
-      </div>
+      </section>
 
 <!-- key features -->
 
-    <div class="gx-key-features">
-      <div class="container">
+    <section id="features">
+      <div class="container white-section">
+        <h2 class="mb-5">How Does It Work?</h2>
+
+        <div class="columns mt-6 mb-6">
+          <div class="column feature-col is-four-fifths">
+            <h3 class="mb-3">Create or join a group of friends, family, neighbors.</h3>
+           <p>Leverage your existing social structures to facilitate trusted interactions between you and your local community.</p>
+          </div>
+          <div class="column feature-col is-one-fifth">
+            <i class="fas fa-users fa-6x"></i>
+          </div>
+        </div>
+
+        <div class="columns mb-6 has-text-right">
+          <div class="column feature-col is-one-fifth" style="margin-right:0px">
+            <div class="container" style="text-align: left;">
+              <i class="fas fa-gift fa-6x"></i>
+            </div>
+
+          </div>
+          <div class="column feature-col is-four-fifths">
+            <h3 class="mb-3">Add items you'd like to gift, loan or exchange.</h3>
+            <p>Upload photos and description categories, suggest items you would consider or need in return for the item – or give away free.</p>
+          </div>
+        </div>
+
+        <div class="columns mb-6">
+          <div class="column feature-col is-four-fifths">
+            <h3 class="mb-3">Let others know what you need.</h3>
+            <p>Let the platform do the work by finding others who best fit your item, letting you know via a percentage based rating.  
+              Or, just search without matching.</p>
+          </div>
+          <div class="column feature-col is-one-fifth">
+            <i class="fas fa-leaf fa-6x"></i>
+          </div>
+        </div>
+
         <div class="columns">
-          <div class="column">
-            <h3 class="is-size-4">Project Goal</h3>
-            <p>
-               
+          <div class="column feature-col is-one-fifth">
+            <i class="fas fa-handshake fa-6x"></i>
+          </div>
+          <div class="column feature-col is-four-fifths has-text-right">
+            <h3 class="mb-3">If we find a match, we'll let you know.</h3>
+            <p>Reach out to the person who needs your item, agree on a time and location, and exchange away!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- about -->
+
+<!-- <section id="about" class="colored-section">
+  <div class="container">
+    <h2 class="has-text-light">Why Use Good Extracts?</h2>
+ 
+      <ul>
+        <li>User Story</li>
+      </ul>
+
+  </div>
+</section> -->
+
+<!-- testimonials -->
+
+    <!-- <section id="testimonials" class="white-section">
+      <div class="container">
+        <h2>Testimonials</h2>
+            <p class="mt-6">
               For my SIT725 project, I want to build an application that helps
               people share used goods with their close peers.
             </p>
-          </div>
-          <div class="column">
-
-          </div>
-        </div>
+  
       </div>
-    </div>
+    </section> -->
+
+
+<!-- contact -->
+
+    <section id="contact">
+      <div class="container colored-section">
+        <h2 class="has-text-light mb-6">Contact</h2>
+      
+
+        <form action="/contact" method="POST">
+
+          <div class="field">
+            <label class="label has-text-light">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+          
+                 
+          <div class="field">
+            <label class="label has-text-light mt-5">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>        
+          </div>
+          
+               
+          <div class="field">
+            <label class="label has-text-light mt-5">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>          
+               
+          <div class="field is-grouped mt-5">
+            <div class="control">
+              <button class="button is-light" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+
+       
+    
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-6">Copyright 2021 GoodExtracts</p>
+        <div>
+          <a href="https://www.twitter.com/"><i class="footer-icon fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/"><i class="footer-icon fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="footer-icon fab fa-instagram"></i></a>
+          <a href="mailto:jaedoyne@gmail.com/"><i class="footer-icon fas fa-envelope"></i></a>
+        </div>
+
+      </div>
+
+    </footer>
+
   </body>
 </html>

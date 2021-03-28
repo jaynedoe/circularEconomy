@@ -1,42 +1,103 @@
 
 /* ELEMENT STYLING */
 
-h1{
-    font-size: 6rem;
+h1, h2, h3 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
-    color: black;
+}
+
+h1{
+    font-size: 5rem;   
     padding-top: 120px;
+    color: black;
+
+}
+
+h2{
+    font-size: 3rem;  
+    color: #151a0f;
+}
+
+h3{
+    color: #5c7557;
+    font-size: 1.5rem;
 }
 
 p{
     line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer{
+    background-color: #151a0f;
     color: white;
+    text-align: center;
+}
+
+.footer-icon{
+    padding: 0.5%;
+    color: #d6b28c;
+}
+
+.footer-icon:hover{
+    color: black;
 }
 
 /* NAVBAR STYLING */
 
 .gx-navbar{
-    padding-right: 5%;
-    padding-left: 10%;
+    padding: 1.5% 1%;
     font-size: 1.25rem;
 }
 
 /* KEY FEATURES STYLING */
 
-.gx-key-features{
-    height: 1000px;
+#features, #contact{
+    margin: auto;
+}
+
+#contact {
+    background-image: url('/img/public_hero_blank.jpeg');  
+    background-size: cover;
+    padding-bottom: 4%;
+}
+
+.white-section{
     padding: 5%;
+    width: 70%;
+    background-color: white;
+}
+
+.feature-col{
+    padding: 4%;
+    background-color: rgb(241, 239, 239);
+}
+
+/* WHY US STYLING */
+
+#about, #testimonials {
+   text-align: center;
+}
+
+/* TESTIMONIALS */
+
+.colored-section{
+    width: 70%;
+    padding: 5%;
+    color: white;
 }
 
 
 /* ICON STYLING */
 
 
-.fa-leaf{
+.fas{
     color: #d6b28c;
 }
 
+.fas:hover{
+    color: #5c7557;
+}
 
 /* MEDIA QUERIES */
 
@@ -47,15 +108,10 @@ p{
         line-height: 1.2;
     }
 
-    .gx-navbar{
-        padding-left: 5%;
-    }
-
     .gx-home-hero{
         padding: 5%;
         margin-bottom: 20px;
         background-image: url('/img/public_hero_blank.jpeg');        
-        background-position: top left; 
         background-size: cover;
     }
 }
@@ -74,27 +130,34 @@ p{
 
 /* large screens */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 5000px) {
 
-    .navbar-item{
-        padding: 4%;        
-    }
-    .gx-home-hero{
-        padding: 0% 8%;
+      .gx-home-hero{
         background-image: url('/img/public_hero.jpeg');
         background-repeat: no-repeat;
         height: 1000px;
-        background-position: center;
+        padding: 5%;
+        background-position: 0px -125px;
         background-size: cover;
     }
 }
 
 /* extra large screens */
 
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
     
-    .navbar-item{
-        padding: 8%;
-    }
 
-}
+
+} */
+
+
+
+/* COLOUR PALETTE */
+
+/* #5c7557 mid green */
+/* #d5b18c  light brown */
+/* #acbc9c light green */
+/* #151a0f black green */
+/* #332312 dark brown */
+/* #aaaa94 light grey green */
+/* #403d22 khaki green */
